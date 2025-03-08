@@ -25,6 +25,7 @@ export async function GET(request: Request) {
 export const APIRequest = () => {
   useEffect(() => {
     if (window.Prism) {
+      // This has serious performance issue when the code is super long
       window.Prism.highlightAll();
     }
   });
